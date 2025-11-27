@@ -280,24 +280,9 @@ IMAGE_SIZE = (224, 224)       # Input image dimensions
 PATCH_SIZE = (16, 16)         # Patch size (determines number of patches)
 ```
 
-### Architecture Modification Guide
 
-**To improve accuracy on custom datasets, reduce `N_LAYERS`:**
 
-```python
-# Experiment configurations to try:
-N_LAYERS = 12    # Original ViT-Base (may overfit)
-N_LAYERS = 8     # Medium depth (recommended for custom datasets)
-N_LAYERS = 4     # Shallow (for very small datasets)
-N_LAYERS = 1     # Minimal (for quick experiments)
-```
-
-**Why this works:**
-- Fewer layers = Fewer parameters = Less overfitting on small datasets
-- The attention mechanism is still powerful even with fewer layers
-- Trade-off: Training speed (fewer layers = faster)
-
-##  Expected Performance
+###  Expected Performance
 
 On the SoyMulticlass dataset with the recommended configuration:
 
@@ -306,7 +291,6 @@ On the SoyMulticlass dataset with the recommended configuration:
 | **Test Top-1 Accuracy** | ~85% |
 | **Test Top-3 Accuracy** | ~98%+ |
 | **Training Time** | ~2-3 hours (on A100 GPU) |
-| **Best Epoch** | 60-80 |
 | **Per-Class Accuracy** | 80-90% (varies by disease type) |
 
 ##  Single Image Prediction
