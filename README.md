@@ -1,15 +1,13 @@
 # Vision Transformer (ViT) for Soybean Leaf Disease Classification
 
-A custom-optimized **Vision Transformer (ViT)** implementation for multi-class soybean leaf disease detection on the **SoyMulticlass Dataset**. This project demonstrates how strategic architecture modifications to the standard ViT-Base-16 model can dramatically improve classification accuracy on custom datasets—achieving **~85% accuracy** compared to just 47% with the original architecture.
+A  **Vision Transformer (ViT)** implementation for multi-class soybean leaf disease Classification on the **SoyMulticlass Dataset**.
 
 ##  Project Overview
 
-This project implements a fine-tuned Vision Transformer that achieves state-of-the-art performance on the SoyMulticlass dataset containing four disease categories: Aerial Blight (AB), Bacterial Pustule (BP), Yellow Mosaic Virus (YMV), and Healthy leaves. The key insight is that **reducing the number of transformer layers** from the standard 12 to a fewer number yields better performance on smaller custom datasets, preventing overfitting and improving generalization.
+This project implements a  Vision Transformer that achieves state-of-the-art performance on the SoyMulticlass dataset containing four disease categories: Aerial Blight (AB), Bacterial Pustule (BP), Yellow Mosaic Virus (YMV), and Healthy leaves. 
 
 ### Key Achievements
 
-- **~85% Accuracy**: Dramatic improvement from 47% (original ViT-Base-16) through architectural modifications
-- **Custom ViT Architecture**: Reduced transformer layers specifically tuned for the SoyMulticlass dataset
 - **4-Class Classification**: Distinguishes between Aerial Blight, Bacterial Pustule, Yellow Mosaic Virus, and Healthy leaves
 - **Comprehensive Evaluation**: Top-1/Top-3 accuracy, precision, recall, F1-score, AUC metrics, and confusion matrices
 - **10,869 Total Images**: Large-scale real-world agricultural dataset with 7,000+ training images
