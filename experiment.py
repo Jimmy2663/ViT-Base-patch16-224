@@ -99,7 +99,7 @@ print(f"\n----------------------------------------------------------------------
 # Save the model with help from utils.py
 utils.save_model(model=model,
                  target_dir=SAVE_DIR,
-                 model_name="300_epoch_ly1_lr1e4_dm768_hd12_ViT_base_model.pth")
+                 model_name="End_ViT_base_model.pth")
 
 
 print(f"\n----------------------------------------------------------------------------------------------------------------------")
